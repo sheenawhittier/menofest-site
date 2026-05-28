@@ -27,4 +27,24 @@ h4 {
   font-family: var(--font-heading);
 }
 
+.noise-bg {
+  position: relative;
+}
 
+.noise-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image:
+    repeating-radial-gradient(
+      circle at 0 0,
+      rgba(59, 23, 24, 0.08) 0,
+      rgba(59, 23, 24, 0.08) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    radial-gradient(circle at 25% 20%, rgba(255, 79, 135, 0.18), transparent 32%),
+    radial-gradient(circle at 75% 15%, rgba(127, 28, 43, 0.12), transparent 30%);
+}

@@ -16,6 +16,8 @@ export default function Home() {
   const eventDate = new Date("2026-08-22T09:00:00").getTime();
   const [daysLeft, setDaysLeft] = useState(0);
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -37,58 +39,91 @@ export default function Home() {
       </div>
 
       {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-[#f5ede5]/90 backdrop-blur-md border-b border-[#d8c7bb]">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <a
-            href="#tickets"
-            className="font-black text-xl tracking-tight hover:text-[#ff4f87] transition"
-          >
-            MENO FEST
-          </a>
+<nav className="sticky top-0 z-50 bg-[#f5ede5]/90 backdrop-blur-md border-b border-[#d8c7bb]">
+  <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a
+      href="#tickets"
+      className="font-black text-xl tracking-tight hover:text-[#ff4f87] transition"
+      onClick={() => setMenuOpen(false)}
+    >
+      MENO FEST
+    </a>
 
-          <div className="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-[0.22em]">
-            <a href="#about" className="hover:text-[#ff4f87] transition">
-              About
-            </a>
-            <a href="#experience" className="hover:text-[#ff4f87] transition">
-              Experience
-            </a>
-            <a href="#speakers" className="hover:text-[#ff4f87] transition">
-              Speakers
-            </a>
-            <a href="#schedule" className="hover:text-[#ff4f87] transition">
-              Schedule
-            </a>
-            <a href="#faq" className="hover:text-[#ff4f87] transition">
-              FAQ
-            </a>
-            <a href="#sponsors" className="hover:text-[#ff4f87] transition">
-              Sponsors
-            </a>
-          </div>
+    <div className="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-[0.22em]">
+      <a href="#about" className="hover:text-[#ff4f87] transition">About</a>
+      <a href="#experience" className="hover:text-[#ff4f87] transition">Experience</a>
+      <a href="#speakers" className="hover:text-[#ff4f87] transition">Speakers</a>
+      <a href="#schedule" className="hover:text-[#ff4f87] transition">Schedule</a>
+      <a href="#faq" className="hover:text-[#ff4f87] transition">FAQ</a>
+      <a href="#sponsors" className="hover:text-[#ff4f87] transition">Sponsors</a>
+    </div>
 
+    <div className="hidden md:block">
+      <a
+        href={ticketLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#ff4f87] hover:bg-[#e63e75] hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-full text-sm font-bold"
+      >
+        GET TICKETS
+      </a>
+    </div>
+
+    <button
+      type="button"
+      onClick={() => setMenuOpen(!menuOpen)}
+      className="md:hidden border border-[#3b1718] rounded-full px-4 py-2 text-sm font-bold uppercase tracking-[0.18em]"
+      aria-label="Toggle navigation menu"
+    >
+      {menuOpen ? "Close" : "Menu"}
+    </button>
+  </div>
+
+  {menuOpen && (
+    <div className="md:hidden bg-[#f5ede5] border-t border-[#d8c7bb] px-6 py-6">
+      <div className="flex flex-col gap-5 text-sm font-bold uppercase tracking-[0.22em]">
+        {[
+          ["About", "#about"],
+          ["Experience", "#experience"],
+          ["Speakers", "#speakers"],
+          ["Schedule", "#schedule"],
+          ["FAQ", "#faq"],
+          ["Sponsors", "#sponsors"],
+        ].map(([label, href]) => (
           <a
-            href={ticketLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#ff4f87] hover:bg-[#e63e75] hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-full text-sm font-bold"
+            key={label}
+            href={href}
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-[#ff4f87] transition"
           >
-            GET TICKETS
+            {label}
           </a>
-        </div>
-      </nav>
+        ))}
+
+        <a
+          href={ticketLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#ff4f87] text-white text-center px-6 py-4 rounded-full mt-2"
+        >
+          GET TICKETS
+        </a>
+      </div>
+    </div>
+  )}
+</nav>
 
       {/* Hero */}
       <section
         id="tickets"
-        className="min-h-[86vh] flex items-center justify-center text-center px-6 py-28 bg-[radial-gradient(circle_at_center,#fffaf6_0%,#f5ede5_55%,#ead7cb_100%)]"
+        className="noise-bg relative overflow-hidden min-h-[82vh] flex items-center justify-center text-center px-6 py-16 md:py-24 bg-[radial-gradient(circle_at_center,#fffaf6_0%,#f5ede5_55%,#ead7cb_100%)]"
       >
-        <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.45em] text-sm md:text-base mb-10 text-[#ff4f87]">
+        <div className="relative z-10 max-w-5xl mx-auto">
+          <p className="uppercase tracking-[0.45em] text-sm md:text-base mb-8 text-[#ff4f87]">
             August 22, 2026 • Provo, Utah
           </p>
 
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-none tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black leading-none tracking-tight mb-6">
             MENO FEST
           </h1>
 
@@ -96,7 +131,7 @@ export default function Home() {
             The Menopause Festival
           </h2>
 
-          <p className="text-4xl md:text-6xl leading-[0.95] max-w-5xl mx-auto mb-8">
+          <p className="text-2xl sm:text-4xl md:text-6xl leading-[1.05] max-w-5xl mx-auto mb-8">
             It’s not in your head,
             <br />
             it’s in your hormones.
