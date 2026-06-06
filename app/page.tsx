@@ -57,28 +57,39 @@ export default function Home() {
   }, [eventDate]);
 
   return (
-    <main className="bg-[#f5ede5] text-[#3b1718]">
-      <div className="bg-[#ff4f87] text-white py-3 px-4 text-center text-sm md:text-base font-bold tracking-wide">
+    <main className="bg-[#f2b6c5] text-[#231f20]">
+      {/* Ticker */}
+      <div className="bg-[#f0557c] text-white py-3 px-4 text-center text-sm md:text-base font-bold tracking-wide">
         CLAWS UP • TIME TO ROAR • IT’S NOT IN YOUR HEAD • IT’S IN YOUR HORMONES • A MIDLIFE UPRISING
       </div>
 
-      <nav className="sticky top-0 z-50 bg-[#f5ede5]/90 backdrop-blur-md border-b border-[#d8c7bb]">
+      {/* Nav */}
+      <nav className="sticky top-0 z-50 bg-[#f2b6c5]/90 backdrop-blur-md border-b border-[#231f20]/20">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <a href="#tickets" className="font-black text-xl tracking-tight hover:text-[#ff4f87] transition" onClick={() => setMenuOpen(false)}>
+          <a
+            href="#tickets"
+            className="font-black text-xl tracking-tight hover:text-[#f0557c] transition"
+            onClick={() => setMenuOpen(false)}
+          >
             MENO FEST
           </a>
 
           <div className="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-[0.22em]">
-            <a href="#about" className="hover:text-[#ff4f87] transition">About</a>
-            <a href="#experience" className="hover:text-[#ff4f87] transition">Experience</a>
-            <a href="#speakers" className="hover:text-[#ff4f87] transition">Speakers</a>
-            <a href="#schedule" className="hover:text-[#ff4f87] transition">Schedule</a>
-            <a href="#faq" className="hover:text-[#ff4f87] transition">FAQ</a>
-            <a href="#sponsors" className="hover:text-[#ff4f87] transition">Sponsors</a>
+            <a href="#about" className="hover:text-[#f0557c] transition">About</a>
+            <a href="#experience" className="hover:text-[#f0557c] transition">Experience</a>
+            <a href="#speakers" className="hover:text-[#f0557c] transition">Speakers</a>
+            <a href="#schedule" className="hover:text-[#f0557c] transition">Schedule</a>
+            <a href="#faq" className="hover:text-[#f0557c] transition">FAQ</a>
+            <a href="#sponsors" className="hover:text-[#f0557c] transition">Sponsors</a>
           </div>
 
           <div className="hidden md:block">
-            <a href={ticketLink} target="_blank" rel="noopener noreferrer" className="bg-[#ff4f87] hover:bg-[#e63e75] hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-full text-sm font-bold">
+            <a
+              href={ticketLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#f0557c] hover:bg-[#ee2d28] hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-full text-sm font-bold"
+            >
               GET TICKETS
             </a>
           </div>
@@ -86,14 +97,14 @@ export default function Home() {
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden border border-[#3b1718] rounded-full px-4 py-2 text-sm font-bold uppercase tracking-[0.18em]"
+            className="md:hidden border border-[#231f20] rounded-full px-4 py-2 text-sm font-bold uppercase tracking-[0.18em]"
           >
             {menuOpen ? "Close" : "Menu"}
           </button>
         </div>
 
         {menuOpen && (
-          <div className="md:hidden bg-[#f5ede5] border-t border-[#d8c7bb] px-6 py-6">
+          <div className="md:hidden bg-[#f2b6c5] border-t border-[#231f20]/20 px-6 py-6">
             <div className="flex flex-col gap-5 text-sm font-bold uppercase tracking-[0.22em]">
               {[
                 ["About", "#about"],
@@ -103,12 +114,22 @@ export default function Home() {
                 ["FAQ", "#faq"],
                 ["Sponsors", "#sponsors"],
               ].map(([label, href]) => (
-                <a key={label} href={href} onClick={() => setMenuOpen(false)} className="hover:text-[#ff4f87] transition">
+                <a
+                  key={label}
+                  href={href}
+                  onClick={() => setMenuOpen(false)}
+                  className="hover:text-[#f0557c] transition"
+                >
                   {label}
                 </a>
               ))}
 
-              <a href={ticketLink} target="_blank" rel="noopener noreferrer" className="bg-[#ff4f87] text-white text-center px-6 py-4 rounded-full mt-2">
+              <a
+                href={ticketLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#f0557c] text-white text-center px-6 py-4 rounded-full mt-2"
+              >
                 GET TICKETS
               </a>
             </div>
@@ -116,64 +137,74 @@ export default function Home() {
         )}
       </nav>
 
+      {/* Hero */}
       <section
         id="tickets"
-        className="noise-bg relative overflow-hidden min-h-[82vh] flex items-center justify-center text-center px-6 py-16 md:py-24 bg-[radial-gradient(circle_at_center,#fffaf6_0%,#f5ede5_55%,#ead7cb_100%)]"
+        className="noise-bg relative overflow-hidden min-h-[82vh] flex items-center justify-center text-center px-6 py-16 md:py-24 bg-[#f2b6c5]"
       >
         <div className="relative z-10 max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.45em] text-sm md:text-base mb-8 text-[#ff4f87]">
+          <p className="uppercase tracking-[0.45em] text-sm md:text-base mb-8 text-[#231f20] font-bold">
             August 22, 2026 • Provo, Utah
           </p>
 
           <div className="mb-10 flex justify-center">
-  <Image
-    src="/meno-fest-updatelogo.svg"
-    alt="Meno Fest"
-    width={620}
-    height={360}
-    priority
-    className="w-full max-w-[620px] h-auto"
-  />
-</div>
+            <Image
+              src="/meno-fest-updatelogo.svg"
+              alt="Meno Fest"
+              width={620}
+              height={360}
+              priority
+              className="w-full max-w-[620px] h-auto"
+            />
+          </div>
 
-<h1 className="sr-only">Meno Fest</h1>
-public/meno-fest-updatelogo.svg
+          <h1 className="sr-only">Meno Fest</h1>
 
-          <p className="text-2xl sm:text-4xl md:text-6xl leading-[1.05] max-w-5xl mx-auto mb-8">
+          <p className="text-2xl sm:text-4xl md:text-6xl leading-[1.05] max-w-5xl mx-auto mb-8 font-black">
             It’s not in your head,
             <br />
             it’s in your hormones.
           </p>
 
-          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-12 text-[#5b3a3a]">
+          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-12 text-[#231f20]/80">
             This is your invitation to the rest of your life.
           </p>
 
           <div className="flex flex-col md:flex-row justify-center gap-5">
-            <a href={ticketLink} target="_blank" rel="noopener noreferrer" className="bg-[#ff4f87] hover:bg-[#e63e75] hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-lg font-bold">
+            <a
+              href={ticketLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#f0557c] hover:bg-[#ee2d28] hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-lg font-bold"
+            >
               GET TICKETS
             </a>
 
-            <a href="#about" className="border-2 border-[#3b1718] px-10 py-5 rounded-full text-lg font-bold hover:bg-[#3b1718] hover:text-white hover:scale-105 transition duration-300">
+            <a
+              href="#about"
+              className="border-2 border-[#231f20] px-10 py-5 rounded-full text-lg font-bold hover:bg-[#231f20] hover:text-white hover:scale-105 transition duration-300"
+            >
               WHAT IS MENO FEST?
             </a>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-16 bg-[#3b1718] text-white text-center border-t border-[#d8c7bb]">
-        <p className="uppercase tracking-[0.35em] text-[#ff7ca8] mb-4">
+      {/* Countdown */}
+      <section className="px-6 py-16 bg-[#231f20] text-white text-center border-t border-[#231f20]/20">
+        <p className="uppercase tracking-[0.35em] text-[#f2b6c5] mb-4">
           Countdown to the uprising
         </p>
         <h2 className="text-6xl md:text-8xl font-black mb-4">{daysLeft}</h2>
         <p className="text-2xl">days until Meno Fest</p>
       </section>
 
-      <section className="relative overflow-hidden bg-[#7f1c2b] text-white px-6 py-28">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,#ff4f87_0%,transparent_60%)]" />
+      {/* Statement */}
+      <section className="relative overflow-hidden bg-[#f0557c] text-white px-6 py-28">
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,#ede50f_0%,transparent_55%)]" />
 
         <div className="relative max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.4em] text-[#ffb0c9] text-sm font-bold mb-8">
+          <p className="uppercase tracking-[0.4em] text-[#ede50f] text-sm font-bold mb-8">
             Midlife is an uprising!
           </p>
 
@@ -183,16 +214,17 @@ public/meno-fest-updatelogo.svg
             Feeling awesome.
           </h2>
 
-          <p className="max-w-4xl mx-auto text-xl md:text-2xl leading-relaxed text-[#fce6ee]">
+          <p className="max-w-4xl mx-auto text-xl md:text-2xl leading-relaxed text-white">
             Let’s end unnecessary suffering, and let’s make the rest of your life BETTER.
           </p>
         </div>
       </section>
 
-      <section id="about" className="px-6 py-28 bg-white border-t border-[#d8c7bb]">
+      {/* About */}
+      <section id="about" className="px-6 py-28 bg-white border-t border-[#231f20]/20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-start">
           <div>
-            <p className="uppercase tracking-[0.35em] text-[#ff4f87] font-bold mb-4">
+            <p className="uppercase tracking-[0.35em] text-[#f0557c] font-bold mb-4">
               What is Meno Fest?
             </p>
 
@@ -201,7 +233,7 @@ public/meno-fest-updatelogo.svg
             </h2>
           </div>
 
-          <div className="text-xl leading-relaxed text-[#5b3a3a] space-y-6">
+          <div className="text-xl leading-relaxed text-[#231f20]/80 space-y-6">
             <p>
               Meno Fest is a one-day conference, workshop, festival-like affair, with one goal:
               We aim to improve the quality of women’s lives--specifically the second half,
@@ -211,7 +243,7 @@ public/meno-fest-updatelogo.svg
               WE BELIEVE WOMEN. We hope to empower YOU to find support and resources for YOUR WELL-BEING.
               Every aspect of it.
             </p>
-            <p className="font-bold text-[#3b1718]">
+            <p className="font-bold text-[#231f20]">
               You matter, we need you. We need your voice. We need you feeling strong, vivacious
               and full of peaceful power--because YOU are what this world needs.
             </p>
@@ -222,9 +254,10 @@ public/meno-fest-updatelogo.svg
         </div>
       </section>
 
-      <section className="px-6 py-28 bg-[#f5ede5] border-t border-[#d8c7bb]">
+      {/* Why */}
+      <section className="px-6 py-28 bg-[#f2b6c5] border-t border-[#231f20]/20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.35em] text-[#ff4f87] font-bold mb-4">
+          <p className="uppercase tracking-[0.35em] text-[#231f20] font-bold mb-4">
             Why this matters
           </p>
 
@@ -233,23 +266,23 @@ public/meno-fest-updatelogo.svg
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="bg-white rounded-[2rem] p-8 border border-[#d8c7bb] shadow-sm">
-              <p className="text-5xl font-black text-[#ff4f87] mb-4">100%</p>
+            <div className="bg-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
+              <p className="text-5xl font-black text-[#f0557c] mb-4">100%</p>
               <p className="text-lg leading-relaxed">
                 of women over 50 will experience menopause. All of them. No work-arounds or injectables available!
               </p>
             </div>
 
-            <div className="bg-white rounded-[2rem] p-8 border border-[#d8c7bb] shadow-sm">
-              <p className="text-5xl font-black text-[#ff4f87] mb-4">1–3</p>
+            <div className="bg-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
+              <p className="text-5xl font-black text-[#2b9dd8] mb-4">1–3</p>
               <p className="text-lg leading-relaxed">
                 hours of education TOTAL about menopause and their related symptoms is what General Practitioners receive.
               </p>
             </div>
 
-            <div className="bg-[#3b1718] text-white rounded-[2rem] p-8 shadow-sm">
-              <p className="text-5xl font-black text-[#ff7ca8] mb-4">ROAR!</p>
-              <p className="text-lg leading-relaxed text-[#fce6ee]">
+            <div className="bg-[#231f20] text-white rounded-[2rem] p-8 shadow-sm">
+              <p className="text-5xl font-black text-[#ede50f] mb-4">ROAR!</p>
+              <p className="text-lg leading-relaxed text-white">
                 Medical research for female bodies and genitals is 100 years behind the research for men’s bodies. IT’S UP TO US.
               </p>
             </div>
@@ -257,10 +290,11 @@ public/meno-fest-updatelogo.svg
         </div>
       </section>
 
-      <section className="px-6 py-24 bg-white border-t border-[#d8c7bb]">
+      {/* For You */}
+      <section className="px-6 py-24 bg-white border-t border-[#231f20]/20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
-            <p className="uppercase tracking-[0.25em] text-[#ff4f87] font-bold mb-4">
+            <p className="uppercase tracking-[0.25em] text-[#f0557c] font-bold mb-4">
               This conference is for you if
             </p>
 
@@ -277,7 +311,7 @@ public/meno-fest-updatelogo.svg
             </ul>
           </div>
 
-          <div className="bg-[#f5ede5] rounded-[2rem] p-10 border border-[#d8c7bb] shadow-sm">
+          <div className="bg-[#f2b6c5] rounded-[2rem] p-10 border border-[#231f20]/20 shadow-sm">
             <h3 className="text-4xl md:text-5xl leading-tight font-bold mb-8">
               This conference is not for you if...
             </h3>
@@ -293,9 +327,10 @@ public/meno-fest-updatelogo.svg
         </div>
       </section>
 
-      <section id="experience" className="px-6 py-28 bg-[#f5ede5] border-t border-[#d8c7bb]">
+      {/* Experience */}
+      <section id="experience" className="px-6 py-28 bg-[#f2b6c5] border-t border-[#231f20]/20">
         <div className="max-w-7xl mx-auto">
-          <p className="uppercase tracking-[0.35em] text-[#ff4f87] font-bold text-center mb-4">
+          <p className="uppercase tracking-[0.35em] text-[#231f20] font-bold text-center mb-4">
             The Experience
           </p>
 
@@ -313,8 +348,8 @@ public/meno-fest-updatelogo.svg
                 key={title}
                 className={`rounded-[2rem] p-8 shadow-sm border transition duration-300 hover:-translate-y-2 hover:shadow-2xl ${
                   index === 1
-                    ? "bg-[#ff4f87] text-white border-[#ff4f87] hover:scale-[1.02]"
-                    : "bg-white border-[#d8c7bb]"
+                    ? "bg-[#f0557c] text-white border-[#f0557c] hover:scale-[1.02]"
+                    : "bg-white border-[#231f20]/20"
                 }`}
               >
                 <p className="text-5xl mb-6">{icon}</p>
@@ -326,9 +361,10 @@ public/meno-fest-updatelogo.svg
         </div>
       </section>
 
-      <section id="speakers" className="px-6 py-28 bg-white border-t border-[#d8c7bb]">
+      {/* Speakers */}
+      <section id="speakers" className="px-6 py-28 bg-white border-t border-[#231f20]/20">
         <div className="max-w-7xl mx-auto">
-          <p className="uppercase tracking-[0.35em] text-[#ff4f87] font-bold text-center mb-4">
+          <p className="uppercase tracking-[0.35em] text-[#f0557c] font-bold text-center mb-4">
             ARE YOU LIKE EVEN A LADY DOCTOR?!
           </p>
 
@@ -336,7 +372,7 @@ public/meno-fest-updatelogo.svg
             Hosted by Aimee Hopkin and Alison Faulkner.
           </h2>
 
-          <p className="max-w-4xl mx-auto text-center text-lg md:text-xl leading-relaxed mb-20 text-[#5b3a3a]">
+          <p className="max-w-4xl mx-auto text-center text-lg md:text-xl leading-relaxed mb-20 text-[#231f20]/80">
             This conference is happily hosted by Psychiatric Nurse Practitioner and Women’s Mental Health
             and Menopause specialist, Aimee Hopkin, and the slightly-less-accredited but deeply enthusiastic
             Alison Faulkner, who has 20-years of hands-on experience working in women’s empowerment,
@@ -349,24 +385,30 @@ public/meno-fest-updatelogo.svg
               ["🎤", "Alison Faulkner", "Women’s empowerment leader with 20-years of hands-on experience in mental wellness and community-building."],
               ["🔥", "More speakers", "Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information."],
             ].map(([icon, name, copy], index) => (
-              <div key={name} className={`${index === 2 ? "bg-[#3b1718] text-white" : "bg-[#f5ede5]"} rounded-[2rem] p-8 border border-[#d8c7bb] shadow-sm`}>
-                <div className={`${index === 2 ? "bg-[#ff4f87]" : "bg-[#ead7cb]"} h-56 rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl`}>
+              <div
+                key={name}
+                className={`${
+                  index === 2 ? "bg-[#231f20] text-white" : "bg-[#f2b6c5]"
+                } rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm`}
+              >
+                <div className={`${index === 2 ? "bg-[#f0557c]" : "bg-white"} h-56 rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl`}>
                   {icon}
                 </div>
-                <p className={`uppercase tracking-[0.2em] ${index === 2 ? "text-[#ff7ca8]" : "text-[#ff4f87]"} font-bold text-sm mb-3`}>
+                <p className={`uppercase tracking-[0.2em] ${index === 2 ? "text-[#ede50f]" : "text-[#f0557c]"} font-bold text-sm mb-3`}>
                   {index === 2 ? "Coming Soon" : "Co-host"}
                 </p>
                 <h3 className="text-3xl font-bold mb-3">{name}</h3>
-                <p className={`text-lg leading-relaxed ${index === 2 ? "text-[#fce6ee]" : ""}`}>{copy}</p>
+                <p className={`text-lg leading-relaxed ${index === 2 ? "text-white" : ""}`}>{copy}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="schedule" className="px-6 py-28 bg-white border-t border-[#d8c7bb]">
+      {/* Schedule */}
+      <section id="schedule" className="px-6 py-28 bg-white border-t border-[#231f20]/20">
         <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.35em] text-[#ff4f87] font-bold mb-4">
+          <p className="uppercase tracking-[0.35em] text-[#f0557c] font-bold mb-4">
             Event Schedule
           </p>
 
@@ -383,7 +425,7 @@ public/meno-fest-updatelogo.svg
               ["1:45 PM", "Breakout Sessions"],
               ["4:15 PM", "Closing Panel"],
             ].map(([time, item]) => (
-              <div key={time} className="flex justify-between gap-6 border-b border-[#d8c7bb] pb-4">
+              <div key={time} className="flex justify-between gap-6 border-b border-[#231f20]/20 pb-4">
                 <span>{time}</span>
                 <strong className="text-right">{item}</strong>
               </div>
@@ -392,9 +434,10 @@ public/meno-fest-updatelogo.svg
         </div>
       </section>
 
-      <section id="faq" className="px-6 py-28 bg-[#f5ede5] border-t border-[#d8c7bb]">
+      {/* FAQ */}
+      <section id="faq" className="px-6 py-28 bg-[#f2b6c5] border-t border-[#231f20]/20">
         <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.35em] text-[#ff4f87] font-bold mb-4">
+          <p className="uppercase tracking-[0.35em] text-[#231f20] font-bold mb-4">
             FAQ
           </p>
 
@@ -404,18 +447,18 @@ public/meno-fest-updatelogo.svg
 
           <div className="space-y-5">
             {faqs.map((faq, index) => (
-              <div key={faq.question} className="bg-white rounded-[1.5rem] border border-[#d8c7bb] overflow-hidden">
+              <div key={faq.question} className="bg-white rounded-[1.5rem] border border-[#231f20]/20 overflow-hidden">
                 <button
                   type="button"
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full text-left p-6 md:p-8 flex justify-between gap-6 items-center"
                 >
                   <span className="text-xl md:text-2xl font-bold">{faq.question}</span>
-                  <span className="text-3xl text-[#ff4f87]">{openFaq === index ? "−" : "+"}</span>
+                  <span className="text-3xl text-[#f0557c]">{openFaq === index ? "−" : "+"}</span>
                 </button>
 
                 {openFaq === index && (
-                  <div className="px-6 md:px-8 pb-8 text-lg leading-relaxed text-[#5b3a3a]">
+                  <div className="px-6 md:px-8 pb-8 text-lg leading-relaxed text-[#231f20]/80">
                     {faq.answer}
                   </div>
                 )}
@@ -425,9 +468,10 @@ public/meno-fest-updatelogo.svg
         </div>
       </section>
 
-      <section id="sponsors" className="px-6 py-28 bg-white border-t border-[#d8c7bb]">
+      {/* Sponsors */}
+      <section id="sponsors" className="px-6 py-28 bg-white border-t border-[#231f20]/20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.35em] text-[#ff4f87] font-bold mb-4">
+          <p className="uppercase tracking-[0.35em] text-[#f0557c] font-bold mb-4">
             Partner With Us
           </p>
 
@@ -435,36 +479,37 @@ public/meno-fest-updatelogo.svg
             Sponsor the midlife uprising.
           </h2>
 
-          <p className="max-w-3xl mx-auto text-xl leading-relaxed mb-10 text-[#5b3a3a]">
+          <p className="max-w-3xl mx-auto text-xl leading-relaxed mb-10 text-[#231f20]/80">
             We will have sponsors and vendors that align with our values: trauma informed,
             cutting-edge research, menopause-educated support tools, and LGBTQ+ allies.
           </p>
 
           <div className="flex flex-col md:flex-row justify-center gap-5">
-            <a className="bg-[#ff4f87] hover:bg-[#e63e75] hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-lg font-bold cursor-pointer">
+            <a className="bg-[#f0557c] hover:bg-[#ee2d28] hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-lg font-bold cursor-pointer">
               BECOME A SPONSOR
             </a>
 
-            <a className="border-2 border-[#3b1718] px-10 py-5 rounded-full text-lg font-bold hover:bg-[#3b1718] hover:text-white hover:scale-105 transition duration-300 cursor-pointer">
+            <a className="border-2 border-[#231f20] px-10 py-5 rounded-full text-lg font-bold hover:bg-[#231f20] hover:text-white hover:scale-105 transition duration-300 cursor-pointer">
               DOWNLOAD SPONSOR PACKET
             </a>
           </div>
         </div>
       </section>
 
-      <footer className="bg-[#3b1718] text-white px-6 py-12 text-center">
+      {/* Footer */}
+      <footer className="bg-[#231f20] text-white px-6 py-12 text-center">
         <h2 className="text-3xl font-black mb-4">MENO FEST</h2>
-        <p className="text-[#fce6ee] mb-6">
+        <p className="text-[#f2b6c5] mb-6">
           It’s not in your head, it’s in your hormones.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 text-sm uppercase tracking-[0.15em]">
-          <a href="#about" className="hover:text-[#ff7ca8] transition">About</a>
-          <a href="#experience" className="hover:text-[#ff7ca8] transition">Experience</a>
-          <a href="#speakers" className="hover:text-[#ff7ca8] transition">Speakers</a>
-          <a href="#schedule" className="hover:text-[#ff7ca8] transition">Schedule</a>
-          <a href="#faq" className="hover:text-[#ff7ca8] transition">FAQ</a>
-          <a href="#sponsors" className="hover:text-[#ff7ca8] transition">Sponsors</a>
+          <a href="#about" className="hover:text-[#f0557c] transition">About</a>
+          <a href="#experience" className="hover:text-[#f0557c] transition">Experience</a>
+          <a href="#speakers" className="hover:text-[#f0557c] transition">Speakers</a>
+          <a href="#schedule" className="hover:text-[#f0557c] transition">Schedule</a>
+          <a href="#faq" className="hover:text-[#f0557c] transition">FAQ</a>
+          <a href="#sponsors" className="hover:text-[#f0557c] transition">Sponsors</a>
         </div>
       </footer>
     </main>
