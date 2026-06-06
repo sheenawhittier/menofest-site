@@ -148,15 +148,15 @@ export default function Home() {
           </p>
 
           <div className="mb-10 flex justify-center">
-            <Image
-              src="/meno-fest-updatelogo.svg"
-              alt="Meno Fest"
-              width={620}
-              height={360}
-              priority
-              className="w-full max-w-[620px] h-auto"
-            />
-          </div>
+  <Image
+    src="/meno-paw.png"
+    alt="Meno Fest paw logo"
+    width={320}
+    height={320}
+    priority
+    className="w-full max-w-[260px] sm:max-w-[320px] h-auto"
+  />
+</div>
 
           <h1 className="sr-only">Meno Fest</h1>
 
@@ -165,6 +165,7 @@ export default function Home() {
             <br />
             it’s in your hormones.
           </p>
+          <h1 className="sr-only">Meno Fest</h1>
 
           <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-12 text-[#231f20]/80">
             This is your invitation to the rest of your life.
@@ -266,14 +267,14 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="bg-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
+            <div className="bg-transparent rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
               <p className="text-5xl font-black text-[#f0557c] mb-4">100%</p>
               <p className="text-lg leading-relaxed">
                 of women over 50 will experience menopause. All of them. No work-arounds or injectables available!
               </p>
             </div>
 
-            <div className="bg-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
+            <div className="bg-transparent rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
               <p className="text-5xl font-black text-[#2b9dd8] mb-4">1–3</p>
               <p className="text-lg leading-relaxed">
                 hours of education TOTAL about menopause and their related symptoms is what General Practitioners receive.
