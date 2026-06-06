@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const ticketLink = "https://www.tickettailor.com/events/YOUR-EVENT-LINK";
@@ -124,13 +125,19 @@ export default function Home() {
             August 22, 2026 • Provo, Utah
           </p>
 
-          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black leading-none tracking-tight mb-6">
-            MENO FEST
-          </h1>
+          <div className="mb-10 flex justify-center">
+  <Image
+    src="/meno-fest-updatelogo.svg"
+    alt="Meno Fest"
+    width={620}
+    height={360}
+    priority
+    className="w-full max-w-[620px] h-auto"
+  />
+</div>
 
-          <h2 className="text-3xl md:text-5xl mb-10">
-            The Menopause Festival
-          </h2>
+<h1 className="sr-only">Meno Fest</h1>
+public/meno-fest-updatelogo.svg
 
           <p className="text-2xl sm:text-4xl md:text-6xl leading-[1.05] max-w-5xl mx-auto mb-8">
             It’s not in your head,
