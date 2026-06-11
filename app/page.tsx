@@ -381,9 +381,9 @@ export default function Home() {
             and mental wellness.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Co-hosts: Aimee + Alison */}
-            <div className="bg-[#f2b6c5] rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
+            <div className="bg-[#f2b6c5] rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
               <div className="rounded-[1.5rem] mb-6 overflow-hidden">
                 <Image
                   src="/aimee-alison-bio-menofest.png"
@@ -403,8 +403,8 @@ export default function Home() {
             </div>
 
             {/* More speakers (coming soon) */}
-            <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
-              <div className="bg-[#f0557c] h-56 rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+            <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+              <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
                 🔥
               </div>
               <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
