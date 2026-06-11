@@ -43,6 +43,7 @@ export default function Home() {
   const [daysLeft, setDaysLeft] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [whyOpen, setWhyOpen] = useState(false);
 
   useEffect(() => {
     const updateCountdown = () => {
@@ -402,6 +403,31 @@ export default function Home() {
                 <p className={`text-lg leading-relaxed ${index === 2 ? "text-white" : ""}`}>{copy}</p>
               </div>
             ))}
+          </div>
+
+          <div className="max-w-3xl mx-auto mt-16">
+            <div className="bg-[#f2b6c5] rounded-[1.5rem] border border-[#231f20]/20 overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setWhyOpen(!whyOpen)}
+                className="w-full text-left p-6 md:p-8 flex justify-between gap-6 items-center"
+              >
+                <span className="text-xl md:text-2xl font-bold">Why us, why now?</span>
+                <span className="text-3xl text-[#f0557c]">{whyOpen ? "−" : "+"}</span>
+              </button>
+
+              {whyOpen && (
+                <div className="px-6 md:px-8 pb-8 text-lg leading-relaxed text-[#231f20]/80 space-y-4">
+                  <p>For this conference we will be hosting speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information. Big pharma doesn’t have all the answers, and neither does the witch-doctor. However, we believe in the lived experiences of women. And we know it takes ALL OF THE THINGS to find wellness.</p>
+                  <p>While we can’t promise to have every answer, we are committed to helping women GET MORE ANSWERS about their health. We are beyond confident we’re more trustworthy than your favorite Tik-Tok account and more current than your GYNO.</p>
+                  <p className="font-bold text-[#231f20] uppercase tracking-[0.1em]">WHY US, WHY NOW?</p>
+                  <p>As Aimee (now 50) began to face her own menopause symptoms, she, at the time a labor and delivery nurse, could not believe the lack of resources and information available to her, IN HER OWN FIELD.</p>
+                  <p>Alison (42) has spent her entire adult life looking doctors and practitioners in the eye expressing severe mental and hormonal health problems to mostly have them suggest, “Have you tried taking birth control?” YES, AND IT DOES NOT HELP.</p>
+                  <p>Disheartened by lots of unnecessary suffering, and frustrated that after-the-fact, so many simple solutions were and ARE available, Aimee and Alison have decided that the best thing they could do is:</p>
+                  <p className="font-bold text-[#231f20]">GET THE INFORMATION TO THE WOMEN. AND THE WOMEN WILL SAVE THE WORLD.</p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>
