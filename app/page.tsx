@@ -341,9 +341,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              ["🧊", "Hot Flash Lounge", "A cool, stylish place to sit, sip, laugh, reset, and remember you are not doing this alone."],
-              ["💥", "Rage Wall", "Write it down. Smash the plate. Let it go. Big feelings are welcome here."],
-              ["🌿", "Hormone Village", "Meet women-led businesses, professionals, artists and creatives. We’ll also have practitioners such as Physical Therapists, Nutritionists and massage therapists you can meet and greet."],
+              ["🧠", "Research Led - Female Focused", "Our mission is education! This means we are bringing in the latest studies, with the most-informed and up-to-date professionals in the fields related to Perimenopause, Menopause, and women’s health."],
+              ["🧊", "Thirst! Hot Flash Lounge", "Get this woman a beverage! We’re excited to partner with Thirst Drinks for caffeine and sugar! For education/speakers we will all stay together! But for breaks and mingling we’ve got this designated space for you to CHILLAX."],
+              ["🐾", "Cougar Puberty Plaza", "Our open-market breakout space for women-led businesses, professionals, artists and creatives! We will also have practitioners such as Physical Therapists, Nutritionists and massage therapists you can connect with."],
             ].map(([icon, title, copy], index) => (
               <div
                 key={title}
