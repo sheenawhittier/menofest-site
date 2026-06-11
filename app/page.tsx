@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const ticketLink = "https://www.tickettailor.com/events/YOUR-EVENT-LINK";
+const ticketLink = "https://buytickets.at/menofestthemenopausefestival/2252787";
 
 const faqs = [
   {
