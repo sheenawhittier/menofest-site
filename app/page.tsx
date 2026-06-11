@@ -7,34 +7,34 @@ const ticketLink = "https://www.tickettailor.com/events/YOUR-EVENT-LINK";
 
 const faqs = [
   {
-    question: "Am I in Perimenopause — what is that?",
+    question: "Am I in Perimenopause- what is that?",
     answer:
-      "“Peri” means basically nothing…except that you have started to show signs and symptoms of menopause. And “Menopause” is technically defined by the cessation of your period for 12 consecutive months. Notice how vague these are? AND “Perimenopause” can last over a 10+ year timeline. How nebulous is that?! So, are you in it? Do you have the symptoms and signs? HOW ARE YOU SUPPOSED TO EVEN KNOW?! Come to the conference. WE WILL EXPLAIN.",
+      "“Peri” which is latin for “about or around” means basically nothing…except that you have started to show signs and symptoms of menopause. Hence: Perimenopause means you’re ABOUT at menopause time.\n\nAnd “Menopause” is technically defined by the cessation of your period for 12 consecutive months.\n\nNotice how vague these are? AND “Perimenopause” can last over a 10+ year timeline. How nebulous is that?!\n\nSo, are you in it? Do you have the symptoms and signs? HOW ARE YOU SUPPOSED TO EVEN KNOW?! And no, you can’t just get your hormones tested to find out--come to the conference WE WILL EXPLAIN.\n\nUnfortunately there’s close to no education or even research available to general practitioners, unless they are actively seeking it. So you very likely can go to your GP expressing concerns with your health very-much related to Perimenopause, and they will never ever bring it up / easily miss the timeline of things.\n\nEducation is the ANSWER. The children should know the signs of menopause, menopause should not be taboo and embarrassing and = old and irrelevant.",
   },
   {
     question: "Is this conference all about hormones and drugs?",
     answer:
-      "Meno Fest is intended to help you look at your health from ALL angles. This includes sexual well-being, nutrition, mental wellness, physical health and coping skills. YOU feeling awesome includes addressing relationships, identity and helping you find and connect to your purpose and SPARK. We will talk about Hormone Replacement Therapy options, as well as other holistic approaches and alternative medicines. But again, you are in charge. We just want you to have GOOD information.",
+      "Meno Fest is intended to help you look at your health from ALL angles. This includes sexual well-being, nutrition, mental wellness, physical health and coping skills. YOU feeling awesome includes addressing: relationships, identity and helping you find and connect to your purpose and SPARK.\n\nWe will talk about Hormone Replacement Therapy options, as well as other holistic approaches and alternative medicines. But again, you are in charge, we just want you to have GOOD information. You get to decide what to do with it and what is right for your BODY-ODY-ODY!",
   },
   {
     question: "Is this some MLM front or supplement ponzi scheme?",
     answer:
-      "We’d be rich! But no. We have no agenda other than the advancement of women’s health, education and empowering YOU to make informed choices about your beautiful banging’ body! We have no master plan to produce, create or sell a magic elixir. We want community and resources for you!",
+      "We’d be rich! But no, we have no agenda other than the advancement of women’s health, education and empowering YOU to make informed choices about your beautiful banging’ body! We have no master plan to produce, or create or sell a magic elixir. We want community and resources for you!\n\nWe will have sponsors and vendors that align with our values, which means they will be/have: trauma informed, cutting-edge research, menopause-educated support tools, be LGBTQ+ allies.\n\nWE BELIEVE WOMEN. We aim to improve the quality of women’s lives--specifically the second half, by giving them the best tools and information possible. We hope to empower YOU to create a much-deserved team of support and resources for YOUR WELL-BEING.\n\nYou matter, we need you. We need your voice.\n\nWe aim to feature women-led businesses, professionals, artists and creatives. We will also have practitioners, such as Physical Therapists, Nutritionists and massage therapists that you can meet and greet in our Hormone Village vendor hall.",
   },
   {
     question: "Are you just going to tell me to lose weight and exercise more?",
     answer:
-      "Oh we are 100% positive you’ve told yourself this MORE than enough. How’s that working for you? No love, we aren’t going to add heaping piles of shame and blame onto your plate. We are creating a safe, supportive place for you to learn, feel, process and understand your lived experiences.",
+      "Oh we are 100% positive you’ve told yourself this MORE than enough. How’s that working for you? No love, we aren’t going to add heaping piles of shame and blame onto your plate. Nor do we want to overwhelm you. We are creating a safe, supportive place for you to learn, feel, process and understand your lived experiences.",
   },
   {
     question: "Aren’t I TOO YOUNG FOR THIS?",
     answer:
-      "We think if you’re 35ish, you’re probably having symptoms you’re not even REALIZING could be menopause related. Then again, if you hope to be lucky enough to live to 50, YOU WILL HAVE MENOPAUSE. Knowledge is power. Know your body. Start today!",
+      "We think if you’re 35ish, you’re probably having symptoms you’re not even REALIZING could be menopause related. If you’re under 35, sure, maybe you can wait!\n\nThen again, if you hope to be lucky enough to live to 50, YOU WILL HAVE MENOPAUSE. Menopause--which is technically the cessation of your period for 12 months, can come on early due to many factors. Knowing the symptoms, your cycle, and the effects of your hormones or lack of them, can help you paint a more holistic picture of your overall health.\n\nIF NOTHING ELSE, start tracking your period cycles regardless of age. If you don’t have a cycle, TRACK YOUR SYMPTOMS. If you do have a cycle track YOUR SYMPTOMS.\n\nKnowledge is power. Know your body. Start today! We believe in you! More research is needed and won’t happen unless we demand it!",
   },
   {
     question: "Aren’t I TOO OLD FOR THIS?",
     answer:
-      "If you’re well into your 60s or beyond, maybe you are? But MAYBE NOT! It might be nice to know ALL of your current options, learn all the things YOU WISH YOU’D KNOWN, or help loved ones understand their history better. At MENO FEST the older you are the more respect you command.",
+      "If you’re well into your 60s or beyond, maybe you are? But MAYBE NOT! It might be nice to know ALL of your current options/ learn all the things YOU WISH YOU’D KNOWN so you can help loved ones, or understand your history better. And may we remind you that your doctor could very-well be citing 20-year-old misconceptions about Hormone Replacement Therapy?\n\nPlease please please, if you are passionate, curious or interested, even if you’ve mastered menopause WE WOULD LOVE TO HAVE YOU.\n\nAt MENOFEST the older you are the more respect you command.\n\nWe want your voice, your perspective and your experience. You’re not too old. Especially at MENOFEST!",
   },
 ];
 
@@ -459,7 +459,7 @@ export default function Home() {
                 </button>
 
                 {openFaq === index && (
-                  <div className="px-6 md:px-8 pb-8 text-lg leading-relaxed text-[#231f20]/80">
+                  <div className="px-6 md:px-8 pb-8 text-lg leading-relaxed text-[#231f20]/80 whitespace-pre-line">
                     {faq.answer}
                   </div>
                 )}
