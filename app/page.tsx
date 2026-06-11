@@ -381,28 +381,40 @@ export default function Home() {
             and mental wellness.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              ["🧠", "Aimee Hopkin", "Psychiatric Nurse Practitioner and Women’s Mental Health and Menopause specialist."],
-              ["🎤", "Alison Faulkner", "Women’s empowerment leader with 20-years of hands-on experience in mental wellness and community-building."],
-              ["🔥", "More speakers", "Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information."],
-            ].map(([icon, name, copy], index) => (
-              <div
-                key={name}
-                className={`${
-                  index === 2 ? "bg-[#231f20] text-white" : "bg-[#f2b6c5]"
-                } rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm`}
-              >
-                <div className={`${index === 2 ? "bg-[#f0557c]" : "bg-white"} h-56 rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl`}>
-                  {icon}
-                </div>
-                <p className={`uppercase tracking-[0.2em] ${index === 2 ? "text-[#ede50f]" : "text-[#f0557c]"} font-bold text-sm mb-3`}>
-                  {index === 2 ? "Coming Soon" : "Co-host"}
-                </p>
-                <h3 className="text-3xl font-bold mb-3">{name}</h3>
-                <p className={`text-lg leading-relaxed ${index === 2 ? "text-white" : ""}`}>{copy}</p>
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            {/* Co-hosts: Aimee + Alison */}
+            <div className="bg-[#f2b6c5] rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
+              <div className="rounded-[1.5rem] mb-6 overflow-hidden">
+                <Image
+                  src="/aimee-alison-bio-menofest.png"
+                  alt="Aimee Hopkin and Alison Faulkner"
+                  width={1000}
+                  height={1079}
+                  className="w-full h-auto"
+                />
               </div>
-            ))}
+              <p className="uppercase tracking-[0.2em] text-[#f0557c] font-bold text-sm mb-3">
+                Your Co-Hosts
+              </p>
+              <h3 className="text-3xl font-bold mb-3">Aimee Hopkin &amp; Alison Faulkner</h3>
+              <p className="text-lg leading-relaxed">
+                Aimee is a Psychiatric Nurse Practitioner and Women’s Mental Health and Menopause specialist. Alison is a women’s empowerment leader with 20-years of hands-on experience in mental wellness and community-building.
+              </p>
+            </div>
+
+            {/* More speakers (coming soon) */}
+            <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm">
+              <div className="bg-[#f0557c] h-56 rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+                🔥
+              </div>
+              <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+                Coming Soon
+              </p>
+              <h3 className="text-3xl font-bold mb-3">More speakers</h3>
+              <p className="text-lg leading-relaxed text-white">
+                Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+              </p>
+            </div>
           </div>
 
           <div className="max-w-3xl mx-auto mt-16">
