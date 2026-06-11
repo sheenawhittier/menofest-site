@@ -78,7 +78,7 @@ export default function Home() {
             <a href="#about" className="hover:text-[#f0557c] transition">About</a>
             <a href="#experience" className="hover:text-[#f0557c] transition">Experience</a>
             <a href="#speakers" className="hover:text-[#f0557c] transition">Speakers</a>
-            <a href="#schedule" className="hover:text-[#f0557c] transition">Schedule</a>
+            <a href="#schedule" className="hover:text-[#f0557c] transition">Your Ticket Includes</a>
             <a href="#faq" className="hover:text-[#f0557c] transition">FAQ</a>
             <a href="#sponsors" className="hover:text-[#f0557c] transition">Sponsors</a>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
                 ["About", "#about"],
                 ["Experience", "#experience"],
                 ["Speakers", "#speakers"],
-                ["Schedule", "#schedule"],
+                ["Your Ticket Includes", "#schedule"],
                 ["FAQ", "#faq"],
                 ["Sponsors", "#sponsors"],
               ].map(([label, href]) => (
@@ -406,32 +406,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Schedule */}
+      {/* Your Ticket Includes */}
       <section id="schedule" className="px-6 py-28 bg-white border-t border-[#231f20]/20">
         <div className="max-w-5xl mx-auto">
           <p className="uppercase tracking-[0.35em] text-[#f0557c] font-bold mb-4">
-            Event Schedule
+            Your Ticket
           </p>
 
           <h2 className="text-5xl md:text-7xl font-black leading-[0.95] mb-12">
-            A full day of clarity, connection, and claws up energy.
+            What is included in your ticket.
           </h2>
 
-          <div className="space-y-5 text-lg">
-            {[
-              ["8:30 AM", "Registration + Coffee + Marketplace"],
-              ["9:30 AM", "Midlife Is a Power Shift"],
-              ["10:30 AM", "Hormones, But Make It Make Sense"],
-              ["12:15 PM", "Lunch + Hormone Village"],
-              ["1:45 PM", "Breakout Sessions"],
-              ["4:15 PM", "Closing Panel"],
-            ].map(([time, item]) => (
-              <div key={time} className="flex justify-between gap-6 border-b border-[#231f20]/20 pb-4">
-                <span>{time}</span>
-                <strong className="text-right">{item}</strong>
-              </div>
-            ))}
-          </div>
+          <ul className="space-y-4 text-lg">
+            <li>🔥 Access to a dozen+ women’s health professionals to answer questions and fill your cup!</li>
+            <li>🔥 6 hours of efficient, purposeful, entertaining programming designed to connect and educate!</li>
+            <li>🔥 A custom only-available-at-the-event workbook: so you don’t have to freak out and think you need to take notes all day!</li>
+            <li>🔥 A delicious catered lunch, snacks, candy and treats! You will not have low blood sugar on our watch!</li>
+            <li>🔥 Our Thirst! Hot Flash Lounge sponsor will be providing mixed soda drinks and treats!</li>
+            <li>🔥 A really cute bag charm/ keychain AWWW! And other not-lame swag!</li>
+            <li>🔥 More details to come!</li>
+          </ul>
         </div>
       </section>
 
@@ -508,7 +502,7 @@ export default function Home() {
           <a href="#about" className="hover:text-[#f0557c] transition">About</a>
           <a href="#experience" className="hover:text-[#f0557c] transition">Experience</a>
           <a href="#speakers" className="hover:text-[#f0557c] transition">Speakers</a>
-          <a href="#schedule" className="hover:text-[#f0557c] transition">Schedule</a>
+          <a href="#schedule" className="hover:text-[#f0557c] transition">Your Ticket Includes</a>
           <a href="#faq" className="hover:text-[#f0557c] transition">FAQ</a>
           <a href="#sponsors" className="hover:text-[#f0557c] transition">Sponsors</a>
         </div>
