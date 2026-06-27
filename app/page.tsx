@@ -427,10 +427,10 @@ jsx{/* Hosts row */}
   </div>
 </div>
 
-{/* Speaker row 1 */}
-<div className="flex flex-col md:flex-row justify-center gap-8 mb-8">
+{/* Speaker grid: row 1 */}
+<div className="grid md:grid-cols-2 gap-8 mb-8">
   {/* April Davis */}
-  <div className="w-full md:w-[calc((100%-4rem)/3)] self-start bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
     <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
       🔥
     </div>
@@ -448,7 +448,7 @@ jsx{/* Hosts row */}
   </div>
 
   {/* Hannah Hammond, LCSW */}
-  <div className="w-full md:w-[calc((100%-4rem)/3)] self-start bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
     <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
       🔥
     </div>
@@ -462,10 +462,10 @@ jsx{/* Hosts row */}
   </div>
 </div>
 
-{/* Speaker row 2 */}
-<div className="flex flex-col md:flex-row justify-center gap-8">
+{/* Speaker grid: row 2 */}
+<div className="grid md:grid-cols-2 gap-8">
   {/* Andrea Driggs */}
-  <div className="w-full md:w-[calc((100%-4rem)/3)] self-start bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
     <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
       🔥
     </div>
@@ -479,7 +479,7 @@ jsx{/* Hosts row */}
   </div>
 
   {/* Taylor Sublett */}
-  <div className="w-full md:w-[calc((100%-4rem)/3)] self-start bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
     <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
       🔥
     </div>
