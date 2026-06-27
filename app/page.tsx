@@ -412,8 +412,8 @@ export default function Home() {
              <Image
                   src="/April.jpg"
                   alt="April Davis"
-                  width={700}
-                  height={725}
+                  width={500}
+                  height={525}
                 />
             </div>
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
@@ -435,9 +435,8 @@ export default function Home() {
              <Image
                   src="/Hannah.png"
                   alt="Hannah Hammond"
-                  width={700}
-                  height={725}
-                  className="w-full h-auto"
+                  width={500}
+                  height={525}
                 />
             </div>
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
@@ -458,9 +457,8 @@ export default function Home() {
              <Image
                   src="/Andrea.jpg"
                   alt="Andrea Driggs"
-                  width={700}
-                  height={725}
-                  className="w-full h-auto"
+                  width={500}
+                  height={525}
                 />
             </div>
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
