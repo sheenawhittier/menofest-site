@@ -471,7 +471,7 @@ export default function Home() {
               Her clinical expertise runs deep, but what sets her apart is her ability to truly listen and make patients feel like the priority they are. 
               Beyond her clinical work, Andrea is a passionate advocate for women taking the wheel in their own healthcare. 
               <br>
-              Off the clock, she's hiking trails, logging miles, and devouring books — somehow also wrangling five adult children, two grandchildren, and one very lucky husband.
+              Off the clock, she's hiking trails, logging miles, and devouring books while somehow also wrangling five adult children, two grandchildren, and one very lucky husband.
             </p>
           </div>
         
