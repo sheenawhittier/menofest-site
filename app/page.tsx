@@ -389,8 +389,8 @@ export default function Home() {
                 <Image
                   src="/aimee-alison-bio-menofest.png"
                   alt="Aimee Hopkin and Alison Faulkner"
-                  width={750}
-                  height={765}
+                  width={700}
+                  height={725}
                   className="w-full h-auto"
                 />
               </div>
@@ -409,7 +409,13 @@ export default function Home() {
           {/* April Davis */}
           <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
             <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
-              🔥
+             <Image
+                  src="/aimee-alison-bio-menofest.png"
+                  alt="Aimee Hopkin and Alison Faulkner"
+                  width={700}
+                  height={725}
+                  className="w-full h-auto"
+                />
             </div>
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
               Speaker
