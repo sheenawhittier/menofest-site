@@ -518,12 +518,8 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center gap-5">
-            <a className="bg-[#f0557c] hover:bg-[#ee2d28] hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-lg font-bold cursor-pointer">
+            <a href="https://docs.google.com/presentation/d/e/2PACX-1vRPt7rge92ceauQk-_XD8-OeoAKzOdsclEWC3IBwz97AoO4lrbZQ2pzk3WoUn5Hg9ZSn5FWuq0u23oq/pub?start=false&loop=false&delayms=3000" className="bg-[#f0557c] hover:bg-[#ee2d28] hover:scale-105 transition duration-300 text-white px-10 py-5 rounded-full text-lg font-bold cursor-pointer">
               BECOME A SPONSOR
-            </a>
-
-            <a className="border-2 border-[#231f20] px-10 py-5 rounded-full text-lg font-bold hover:bg-[#231f20] hover:text-white hover:scale-105 transition duration-300 cursor-pointer">
-              DOWNLOAD SPONSOR PACKET
             </a>
           </div>
         </div>
