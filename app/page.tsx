@@ -389,8 +389,8 @@ export default function Home() {
                 <Image
                   src="/aimee-alison-bio-menofest.png"
                   alt="Aimee Hopkin and Alison Faulkner"
-                  width={1000}
-                  height={1079}
+                  width={750}
+                  height={765}
                   className="w-full h-auto"
                 />
               </div>
@@ -403,95 +403,72 @@ export default function Home() {
               </p>
             </div>
           </div>
-         Here's the complete JSX for the full section as it stands — centered half-width host card, then two centered rows of two speaker cards each sized to a third of the row width:
-jsx{/* Hosts row */}
-<div className="flex justify-center mb-8">
-  {/* Co-hosts: Aimee + Alison */}
-  <div className="w-full md:w-1/2 bg-[#f2b6c5] rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
-    <div className="rounded-[1.5rem] mb-6 overflow-hidden">
-      <Image
-        src="/aimee-alison-bio-menofest.png"
-        alt="Aimee Hopkin and Alison Faulkner"
-        width={1000}
-        height={1079}
-        className="w-full h-auto"
-      />
-    </div>
-    <p className="uppercase tracking-[0.2em] text-[#f0557c] font-bold text-sm mb-3">
-      Your Co-Hosts
-    </p>
-    <h3 className="text-3xl font-bold mb-3">Aimee Hopkin &amp; Alison Faulkner</h3>
-    <p className="text-lg leading-relaxed">
-      Aimee is a Psychiatric Nurse Practitioner and Women’s Mental Health and Menopause specialist. Alison is a women’s empowerment leader with 20-years of hands-on experience in mental wellness and community-building.
-    </p>
-  </div>
-</div>
 
-{/* Speaker grid: row 1 */}
-<div className="grid md:grid-cols-2 gap-8 mb-8">
-  {/* April Davis */}
-  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
-    <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
-      🔥
-    </div>
-    <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
-      Speaker
-    </p>
-    <h3 className="text-3xl font-bold mb-3">April Davis</h3>
-    <p className="text-lg leading-relaxed text-white">
-      April Davis is a sex and menstrual cycle educator, founder of Haus of Vagina, and one of the most refreshingly honest voices in women’s health. With a B.S. in Psychology, a background in emergency medicine, and years assisting births alongside a Certified Nurse Midwife, she brings real clinical depth to conversations that have too long been oversimplified — or skipped entirely.
-      <br /><br />
-      Through Haus of Vagina, she builds the tools, content, and resources that make body literacy accurate, accessible, and actually fun. Her premise is simple: when people genuinely understand their cycles, anatomy, and hormones, everything changes. That work has landed on national conference stages, in therapy offices, classrooms, and living rooms alike, and on the Haus of Vagina Podcast, which she hosts. A background in branding, photography, and media means her content informs and connects.
-      <br /><br />
-      She’s based in Southern Utah, and yes, she made a vulva plushie — anatomically complete, clitoris and all… because of course she did.
-    </p>
-  </div>
-
-  {/* Hannah Hammond, LCSW */}
-  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
-    <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
-      🔥
-    </div>
-    <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
-      Coming Soon
-    </p>
-    <h3 className="text-3xl font-bold mb-3">Hannah Hammond, LCSW</h3>
-    <p className="text-lg leading-relaxed text-white">
-      Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
-    </p>
-  </div>
-</div>
-
-{/* Speaker grid: row 2 */}
-<div className="grid md:grid-cols-2 gap-8">
-  {/* Andrea Driggs */}
-  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
-    <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
-      🔥
-    </div>
-    <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
-      Coming Soon
-    </p>
-    <h3 className="text-3xl font-bold mb-3">Andrea Driggs</h3>
-    <p className="text-lg leading-relaxed text-white">
-      Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
-    </p>
-  </div>
-
-  {/* Taylor Sublett */}
-  <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
-    <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
-      🔥
-    </div>
-    <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
-      Coming Soon
-    </p>
-    <h3 className="text-3xl font-bold mb-3">Taylor Sublett</h3>
-    <p className="text-lg leading-relaxed text-white">
-      Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
-    </p>
-  </div>
-</div>
+        {/* Speaker grid: row 1 */}
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          {/* April Davis */}
+          <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+            <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+              🔥
+            </div>
+            <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+              Speaker
+            </p>
+            <h3 className="text-3xl font-bold mb-3">April Davis</h3>
+            <p className="text-lg leading-relaxed text-white">
+              April Davis is a sex and menstrual cycle educator, founder of Haus of Vagina, and one of the most refreshingly honest voices in women’s health. With a B.S. in Psychology, a background in emergency medicine, and years assisting births alongside a Certified Nurse Midwife, she brings real clinical depth to conversations that have too long been oversimplified — or skipped entirely.
+              <br /><br />
+              Through Haus of Vagina, she builds the tools, content, and resources that make body literacy accurate, accessible, and actually fun. Her premise is simple: when people genuinely understand their cycles, anatomy, and hormones, everything changes. That work has landed on national conference stages, in therapy offices, classrooms, and living rooms alike, and on the Haus of Vagina Podcast, which she hosts. A background in branding, photography, and media means her content informs and connects.
+              <br /><br />
+              She’s based in Southern Utah, and yes, she made a vulva plushie — anatomically complete, clitoris and all… because of course she did.
+            </p>
+          </div>
+        
+          {/* Hannah Hammond, LCSW */}
+          <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+            <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+              🔥
+            </div>
+            <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+              Coming Soon
+            </p>
+            <h3 className="text-3xl font-bold mb-3">Hannah Hammond, LCSW</h3>
+            <p className="text-lg leading-relaxed text-white">
+              Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+            </p>
+          </div>
+        </div>
+        
+        {/* Speaker grid: row 2 */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Andrea Driggs */}
+          <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+            <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+              🔥
+            </div>
+            <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+              Coming Soon
+            </p>
+            <h3 className="text-3xl font-bold mb-3">Andrea Driggs</h3>
+            <p className="text-lg leading-relaxed text-white">
+              Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+            </p>
+          </div>
+        
+          {/* Taylor Sublett */}
+          <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+            <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+              🔥
+            </div>
+            <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+              Coming Soon
+            </p>
+            <h3 className="text-3xl font-bold mb-3">Taylor Sublett</h3>
+            <p className="text-lg leading-relaxed text-white">
+              Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+            </p>
+          </div>
+        </div>
 
           <div className="max-w-3xl mx-auto mt-16">
             <div className="bg-[#f2b6c5] rounded-[1.5rem] border border-[#231f20]/20 overflow-hidden">
