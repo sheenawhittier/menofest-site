@@ -440,11 +440,14 @@ export default function Home() {
                 />
             </div>
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
-              Coming Soon
+              Speaker
             </p>
             <h3 className="text-3xl font-bold mb-3">Hannah Hammond, LCSW</h3>
             <p className="text-lg leading-relaxed text-white">
-              Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+              Therapist, educator, and firm believer that healing is equal parts science, self-awareness, and a really good sense of humor.
+<br> Like many therapists, Hannah's interest in psychology started long before graduate school, years she now refers to simply as her "field research." It sparked a lifelong fascination with why people think, feel, and behave the way they do, and, more to the point, how they heal. For more than 13 years, she's paired evidence-based therapy with genuine human connection, helping people work through eating disorders, trauma, addiction, mood disorders, and the wonderfully complex terrain of neurodivergence.
+Because most of the people she serves are women, Hannah is especially drawn to where physical and mental health meet. Healing doesn't happen in silos, she'll tell you, and understanding hormones, the nervous system, relationships, and the whole person is often the missing piece. Somewhere along the way she also mastered the fine art of apologizing for what's hers without apologizing for everyone else's behavior. A skill she highly recommends.
+Whether she's helping someone untangle decades of people-pleasing or realize their brain has been playing by an entirely different rulebook all along, Hannah brings warmth, wisdom, and just the right amount of gentle truth-telling to every conversation.
             </p>
           </div>
         </div>
@@ -462,7 +465,7 @@ export default function Home() {
                 />
             </div>
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
-              Coming Soon
+              Speaker
             </p>
             <h3 className="text-3xl font-bold mb-3">Andrea Driggs,DNP,CNM</h3>
             <p className="text-lg leading-relaxed text-white">
