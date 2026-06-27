@@ -410,8 +410,8 @@ export default function Home() {
           <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
             <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
              <Image
-                  src="/aimee-alison-bio-menofest.png"
-                  alt="Aimee Hopkin and Alison Faulkner"
+                  src="/April.png"
+                  alt="April Davis"
                   width={700}
                   height={725}
                   className="w-full h-auto"
@@ -433,7 +433,13 @@ export default function Home() {
           {/* Hannah Hammond, LCSW */}
           <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
             <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
-              🔥
+             <Image
+                  src="/Hannah.png"
+                  alt="Hannah Hammond"
+                  width={700}
+                  height={725}
+                  className="w-full h-auto"
+                />
             </div>
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
               Coming Soon
