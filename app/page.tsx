@@ -405,14 +405,12 @@ export default function Home() {
           </div>
 
           {/* Speaker grid: 4 columns, 4 announcement spots */}
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-2">
             {[0, 1, 2, 3].map((i) => (
               <div
                 key={i}
-                className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col"
-              >
+                className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
                 <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
-                  🔥
                 </div>
                 <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
                   Coming Soon
