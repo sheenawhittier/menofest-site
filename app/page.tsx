@@ -410,7 +410,7 @@ export default function Home() {
           <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
             <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
              <Image
-                  src="/April.jpg"
+                  src="/AprilOval.png"
                   alt="April Davis"
                   width={500}
                   height={525}
@@ -433,8 +433,8 @@ export default function Home() {
           <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
             <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
              <Image
-                  src="/Hannah.png"
-                  alt="Hannah Hammond"
+                  src="/HannahOval.png"
+                  alt="Hannah Hammond, LCSW"
                   width={500}
                   height={525}
                 />
@@ -455,8 +455,8 @@ export default function Home() {
           <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
             <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
              <Image
-                  src="/Andrea.jpg"
-                  alt="Andrea Driggs"
+                  src="/AndreaOval.jpg"
+                  alt="Andrea Driggs,DNP,CNM"
                   width={500}
                   height={525}
                 />
@@ -464,9 +464,14 @@ export default function Home() {
             <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
               Coming Soon
             </p>
-            <h3 className="text-3xl font-bold mb-3">Andrea Driggs</h3>
+            <h3 className="text-3xl font-bold mb-3">Andrea Driggs,DNP,CNM</h3>
             <p className="text-lg leading-relaxed text-white">
-              Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+              Andrea is a women's health nurse practitioner with over 25 years of experience and a superpower: making perimenopause and menopause feel manageable — maybe even empowering. 
+              She's on a mission to ensure every woman she works with feels heard, validated, and armed with real answers (not just a pamphlet). 
+              Her clinical expertise runs deep, but what sets her apart is her ability to truly listen and make patients feel like the priority they are. 
+              Beyond her clinical work, Andrea is a passionate advocate for women taking the wheel in their own healthcare. 
+              <br>
+              Off the clock, she's hiking trails, logging miles, and devouring books — somehow also wrangling five adult children, two grandchildren, and one very lucky husband.
             </p>
           </div>
         
