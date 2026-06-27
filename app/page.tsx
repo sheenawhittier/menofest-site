@@ -417,6 +417,61 @@ export default function Home() {
             </div>
           </div>
 
+                    <div className="grid md:grid-cols-4 gap-2">
+            {/* Speakers */}
+            <div className="bg-[#f2b6c5] rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+              <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+              <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+                🔥
+              </div>
+              <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+                Coming Soon
+              </p>
+              <h3 className="text-3xl font-bold mb-3">More speakers</h3>
+              <p className="text-lg leading-relaxed text-white">
+                Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+              </p>
+            </div>
+
+            {/* More speakers (coming soon) */}
+            <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+              <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+                🔥
+              </div>
+              <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+                Coming Soon
+              </p>
+              <h3 className="text-3xl font-bold mb-3">More speakers</h3>
+              <p className="text-lg leading-relaxed text-white">
+                Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+              </p>
+            </div>
+            <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+              <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+                🔥
+              </div>
+              <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+                Coming Soon
+              </p>
+              <h3 className="text-3xl font-bold mb-3">More speakers</h3>
+              <p className="text-lg leading-relaxed text-white">
+                Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+              </p>
+            </div>
+            <div className="bg-[#231f20] text-white rounded-[2rem] p-8 border border-[#231f20]/20 shadow-sm flex flex-col">
+              <div className="bg-[#f0557c] flex-1 min-h-[14rem] rounded-[1.5rem] mb-6 flex items-center justify-center text-5xl">
+                🔥
+              </div>
+              <p className="uppercase tracking-[0.2em] text-[#ede50f] font-bold text-sm mb-3">
+                Coming Soon
+              </p>
+              <h3 className="text-3xl font-bold mb-3">More speakers</h3>
+              <p className="text-lg leading-relaxed text-white">
+                Speakers and information from sources we personally trust and believe to have the most-up-to-date, medically relevant, researched information.
+              </p>
+            </div>
+          </div>
+
           <div className="max-w-3xl mx-auto mt-16">
             <div className="bg-[#f2b6c5] rounded-[1.5rem] border border-[#231f20]/20 overflow-hidden">
               <button
