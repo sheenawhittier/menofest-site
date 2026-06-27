@@ -61,7 +61,7 @@ export default function Home() {
     <main className="bg-[#f2b6c5] text-[#231f20]">
       {/* Ticker */}
       <div className="bg-[#f0557c] text-white py-3 px-4 text-center text-sm md:text-base font-bold tracking-wide">
-        CLAWS UP • TIME TO ROAR • IT’S NOT IN YOUR HEAD • IT’S IN YOUR HORMONES • A MIDLIFE UPRISING
+        CLAWS UP • TIME TO ROAR • IT’S NOT IN YOUR HEAD • IT’S IN YOUR HORMONES • A MIDLIFE UPRISING!
       </div>
 
       {/* Nav */}
